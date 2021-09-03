@@ -10,8 +10,6 @@ export default function InputForm() {
     <p style={{ marginLeft:"20%", marginTop:"1%"}}>Instruction</p> 
     <textarea style={{display:"inline-block", marginLeft:"20%", size:"25%"}} rows="5" type = 'text' placeholder="instruction"
      label="Instruction" size ="50"  ></textarea>
-     <p>Hehoo</p>
-
-  </form>
+     </form>
   )
 }

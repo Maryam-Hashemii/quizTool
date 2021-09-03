@@ -1,0 +1,25 @@
+.questionPopUpView { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.questionPopUp-inner {
+  position: relative;
+  padding: 15px;
+  padding-top: 1%;
+  width:65%;
+  height: 80%;
+  background-color: white;
+  border-radius: 2%;
+  font-size: 14px;
+}
+.line{
+  color:red;
+}
