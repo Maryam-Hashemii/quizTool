@@ -12,10 +12,8 @@ export default function App() {
       <main>
          {/* this button should be moved to another page */}
       <button onClick={()=> setButtonPopUp(true)} >Add Question</button>
-      <QuestionPopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
-      </QuestionPopUp>
+      <QuestionPopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}/>
       </main>
-     
     </div>
     )
-}
+  }

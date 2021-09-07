@@ -12,14 +12,92 @@
 }
 .questionPopUp-inner {
   position: relative;
-  padding: 15px;
-  padding-top: 1%;
+  padding: 0px;
+  padding-top: 0%;
   width:65%;
   height: 80%;
   background-color: white;
   border-radius: 2%;
   font-size: 14px;
 }
-.line{
-  color:red;
+h4{
+padding-left: 2%;
+padding-top: 0%;
+padding-bottom: 0%;
+}
+.questionTypeTitle{
+  display: block ;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  /* margin: 8%; */
+  /* padding: 5%; */
+ 
+}
+.pointsTitle{
+  top: 15%;
+  left: 80%;
+  position: absolute;
+
+}
+.pointsInput{      
+  top: 15%;
+  left: 90%;
+  position: absolute;
+}
+.questionTitle{
+  display: block ;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+.questionBox{
+  display: block ;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  size:50px;
+  box-sizing: content-box;
+}
+.cancelButton{
+  position: absolute;
+  display: inline-block; 
+  /* justify-content: space-between; */
+  background-color: #ccc;
+  font-size: 16 px;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 12%;
+  text-align: left;
+  bottom: 5%;
+  left: 30%;
+}
+.saveAndAdd{
+  position: absolute;
+  display: inline-block; 
+  /* justify-content: space-between; */
+  background-color:  #ccc;
+  font-size: 16 px;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 25%;
+  text-align: left;
+  bottom: 5%;
+  left: 55%; 
+}
+.save{
+  position: absolute;
+  display: inline-block; 
+  /* justify-content: space-between; */
+  background-color:  #ccc;
+  font-size: 16 px;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 10%;
+  text-align: left;
+  bottom: 5%;
+  left: 80%; 
 }

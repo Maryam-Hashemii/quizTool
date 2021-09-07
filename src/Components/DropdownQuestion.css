@@ -1,0 +1,38 @@
+.dd-wrapper{
+  /* display: block; */
+  /* min-height: 38px; */
+  /* flex-wrap: wrap; */
+}
+.dd-header{
+ 
+  display: block;
+  /* justify-content: space-between; */
+  cursor: pointer;
+  width: 35%;
+  padding: 0 20 px;
+  font-weight: bold;
+  background-color: #ccc;
+  top: 15%;
+  left: 30%;
+  position: absolute;
+}
+.ddButton{
+  position:relative;
+  display: inline-block;
+  justify-content: space-between;
+  background-color: white;
+  font-size: 16 px;
+  padding: 10px 40px 10px 40px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 35%;
+  text-align: left;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+}
+.ddButton:hover{
+  background-color: #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
