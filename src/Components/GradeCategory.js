@@ -1,4 +1,3 @@
-import { getElementError } from '@testing-library/react';
 import React, { useEffect, useState } from 'react';
 import fire from '../fire.js';
 

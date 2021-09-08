@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './DropdownQuestion.css';
-import SingleChoice from './SingleChoice'
 
 function DropdownQuestion(props){
   let {title, items} = props;
@@ -14,9 +13,7 @@ function DropdownQuestion(props){
      setConfirmedTitle(item.value);
      setShowNewPopUp(true)
     }
-
-  const newPopUp = showNewPopUp ? <SingleChoice/> : ""
-
+    
   return (
     <div className= "dd-wrapper">
       <div 

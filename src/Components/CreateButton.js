@@ -1,8 +1,9 @@
 import React from 'react';
 import fire from '../fire.js';
-
+import { useHistory } from 'react-router-dom'
 
 function CreateButton(props){
+    let history = useHistory();
     const handleSubmit = (e) =>{
         const assignmentDetailsRef = fire.database().ref('assignmentDetails').push(props.assignmentDetailsParameters);
         const assignmentDetailsUID = assignmentDetailsRef.key;
@@ -14,6 +15,7 @@ function CreateButton(props){
         const assignmentRef = fire.database().ref('assignment').push(assignmentParameters);
         const assignmentUID = assignmentRef.key;
         props.setAssignmentUID(assignmentUID);
+        history.push('/create/add-question')
     }
     
     return (

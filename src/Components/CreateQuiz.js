@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 // import fire from '../fire.js';
 import Title from './Title';
@@ -9,7 +9,7 @@ import ShuffleQuestions from './ShuffleQuestions';
 import AddTimer from './AddTimer';
 import NoOfAttempts from './NoOfAttempts'
 import GradeCategory from './GradeCategory';
-
+import { Link } from 'react-router-dom'
 import CreateButton from './CreateButton';
 
 function CreateQuiz(){
@@ -35,30 +35,21 @@ function CreateQuiz(){
     //     assignmentDetailsID: ''
     //  }
 
-    useEffect(()=>{
-
-        console.log(title);
-        console.log(instructions);
-        console.log(revealScore);
-        console.log(displayOneQuestion);
-        console.log(shuffleQuestions);
-        console.log(addTimer);
-        console.log(assignmentUID);
-        console.log(noOfAttempts);
-        
-    });
     return (
-        <div className = 'App'>
-            <h3>Create Quiz</h3>
-            <Title setTitle = {setTitle}/>
-            <Instructions setInstructions= {setInstructions} />
-            <RevealScore setRevealScore= {setRevealScore} />
-            <DisplayOneQuestion setDisplayOneQuestion = {setDisplayOneQuestion} />
-            <ShuffleQuestions setShuffleQuestions = {setShuffleQuestions} />
-            <AddTimer setAddTimer = {setAddTimer} />
-            <NoOfAttempts setNoOfAttempts = {setNoOfAttempts} />
-            <GradeCategory /><br /><br /><br /><br />
-            <CreateButton title={title} setAssignmentUID={setAssignmentUID} assignmentDetailsParameters = {assignmentDetailsParameters } />
+        <div>
+            <Link to='/quiz/create'></Link>
+            <div className = 'App'>
+                <h3>Create Quiz</h3>
+                <Title setTitle = {setTitle}/>
+                <Instructions setInstructions= {setInstructions} />
+                <RevealScore setRevealScore= {setRevealScore} />
+                <DisplayOneQuestion setDisplayOneQuestion = {setDisplayOneQuestion} />
+                <ShuffleQuestions setShuffleQuestions = {setShuffleQuestions} />
+                <AddTimer setAddTimer = {setAddTimer} />
+                <NoOfAttempts setNoOfAttempts = {setNoOfAttempts} />
+                <GradeCategory /><br /><br /><br /><br />
+                <CreateButton title={title} setAssignmentUID={setAssignmentUID} assignmentDetailsParameters = {assignmentDetailsParameters } />
+            </div>
         </div>
     )
     
